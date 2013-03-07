@@ -6,7 +6,10 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'splitbill.views.home', name='home'),
+    url(r'^$', include('authenticate.urls', namespace="authenticate")),
+    url(r'^login/', include('authenticate.urls', namespace="authenticate")),
+    url(r'^exit/', include('authenticate.urls', namespace="authenticate")),
+    url(r'^register/', include('register.urls', namespace="authenticate")),
     # url(r'^splitbill/', include('splitbill.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

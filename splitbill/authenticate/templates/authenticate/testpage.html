@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css">
+</head>
+
+<p class="text-right"><i class="icon-user"></i> {{ username }}</p>
+<body>
+<div class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#">{{ header }} &copy;</a>
+        <ul class="nav">
+            <li>
+                <a href="/login/dashboard.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Add Transaction</a>
+            </li>
+            <li>
+                <a href="#">My Groups</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<p>This is the place where you add transactions!</p>
+</body>
+<script type="text/javascript" src="{{ STATIC_URL }}jquery.js"></script>
+</html>
