@@ -1,8 +1,8 @@
 from django.conf.urls import patterns, url
 
-from authenticate import views
+from register import views
 
 urlpatterns = patterns('',
-                       url(r'^', views.index, name='index'),
-                       url(r'^create$', views.index, name='index'),
+                       url(r'^', views.create, name='index'),
+                       url(r'^create$', views.create, name='create'),
 )
